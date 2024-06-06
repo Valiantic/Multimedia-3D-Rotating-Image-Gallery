@@ -98,4 +98,131 @@ h1{
     display: block; /* Makes subtitle a block element on a new line */
     margin-top: 0.5rem; /* Adjust margin as desired */
   }
+
+  /* card title */
+
+  #footer {
+    position: absolute;
+    top: 700px;
+    bottom: 400px;
+    left: 10px;
+    width: 100%;  /* Optional: Set width to 100% for full width */
+}
+
+
+    .about{
+        margin-top: 170px;
+        margin-bottom: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .card-solo{
+    margin-top: 400px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-members{
+    margin-top: 800px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-memberstwo{
+    margin-top: 1200px;
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  img{
+
+    height: 125px;
+    width: 120px;
+    border-radius: 20%;
+    justify-content: center;
+  }
+
+  .card {
+    width: 17em;
+    height: 22.5em;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .card span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .card .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.72em;
+    margin: 1em;
+  }
+  
+  .card .img {
+    width: 4.8em;
+    height: 4.8em;
+    background: white;
+    border-radius: 15px;
+    margin: auto;
+  }
+  
+  .card .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .card a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .card a:hover {
+    color: rgb(36, 144, 221);
+  }
+  
+  .card button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .card button:hover {
+    background:  rgb(36, 144, 221);
+    color: white;
+    cursor: pointer;
+  }
   
