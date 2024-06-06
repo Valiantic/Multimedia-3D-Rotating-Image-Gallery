@@ -1,68 +1,95 @@
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* background: linear-gradient(150deg,rgb(214, 240, 68), rgb(47, 147, 218)); */
-    background: lightgray;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: lightgray;
+}
+
+.container {
+  position: relative; /* Needed for absolute positioning of subheading */
+  width: 200px;
+  height: 400px; /* Adjust height to accommodate subheading */
 }
 
 .box {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
-
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+  margin-top: 200px;
 }
 
-.box:hover{
-    animation-play-state: paused;
+.box:hover {
+  animation-play-state: paused;
 }
-
 
 @keyframes animate {
-    0%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    100%{
-        transform: perspective(1000px) rotateY(360deg);
-    }
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
 }
 
-.box span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
-    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 36deg)) translateZ(450px);
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(4, 4, 4, 0.267));
+}
+
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 15px;
+  border: 4px double rgb(0, 0, 0);
+}
+
+img:hover {
+  transform: translateY(-2px);
 }
 
 
-
-.box span img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    border-radius: 15px;
-    border: 4px double rgb(0, 0, 0);
+h1{
+  font-family: "Noto Serif Gujarati", serif;
+  font-optical-sizing: auto;
+  margin-top: 0;
 }
 
-img:hover{
-    transform: translateY(-2px);
-    
-}
+.heading-container {
+    text-align: center; /* Or adjust alignment as desired */
+    margin-top: 0;
+    position: fixed;
+    top: 0; /* Places it at the top of the viewport */
+    left: 0; /* Places it at the left edge of the viewport (optional) */
+    width: 100%; /* Stretches the div across the entire width */
+    /* Add other styles like background color, padding, etc. */
+  }
+  
+  .subtitle {
+    font-family: "Noto Serif Gujarati", serif;
+    font-optical-sizing: auto;
+    font-size: 20px; /* Adjust font size as desired */
+    color: black; /* Adjust color as desired */
+    display: block; /* Makes subtitle a block element on a new line */
+    margin-top: 0.5rem; /* Adjust margin as desired */
+  }
+  
