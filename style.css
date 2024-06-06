@@ -16,6 +16,7 @@ body {
   position: relative; /* Needed for absolute positioning of subheading */
   width: 200px;
   height: 400px; /* Adjust height to accommodate subheading */
+
 }
 
 .box {
@@ -24,7 +25,9 @@ body {
   height: 300px;
   transform-style: preserve-3d;
   animation: animate 20s linear infinite;
-  margin-top: 200px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+
 }
 
 .box:hover {
@@ -72,6 +75,9 @@ h1{
   font-family: "Noto Serif Gujarati", serif;
   font-optical-sizing: auto;
   margin-top: 0;
+  color: beige;
+  -webkit-text-stroke: 1px #252525;
+  font-size: 30px;
 }
 
 .heading-container {
