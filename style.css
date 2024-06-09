@@ -118,23 +118,23 @@ h1{
 
     .about{
         margin-top: 170px;
-        margin-bottom: 300px;
+        margin-bottom: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2vw;
     }
 
-    .card-solo{
+    /* .card-solo{
     margin-top: 400px;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .card-members{
-    margin-top: 800px;
+    margin-top: 45%;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ h1{
   }
 
   .card-memberstwo{
-    margin-top: 1200px;
+    margin-top: 75%;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
@@ -169,6 +169,7 @@ h1{
     display: flex;
     flex-direction: column;
     margin: 20px;
+    margin-bottom: 20%;
   }
   
   .card span {
@@ -256,7 +257,19 @@ h1{
       padding: 0;
     }
     .about{
+      margin-top: 100%;
+      margin-bottom: 50%;
       font-size: 2.5vw;
+    }
+    .card-members {
+      margin-top: 100%;
+    }
+    .card-memberstwo {
+      margin-top: 100%;
+    }
+    .card {
+      height: 100%;
+      width: 100%;
     }
     
   }
