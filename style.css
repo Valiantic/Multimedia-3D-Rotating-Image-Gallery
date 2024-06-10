@@ -103,6 +103,7 @@ h1{
     color: black; /* Adjust color as desired */
     display: block; /* Makes subtitle a block element on a new line */
     margin-top: 0.5rem; /* Adjust margin as desired */
+    margin-bottom: 10%;
   }
 
   /* card title */
@@ -125,16 +126,16 @@ h1{
         font-size: 2vw;
     }
 
-    /* .card-solo{
-    margin-top: 400px;
+    .card-solo{
+    margin-top: 550px;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-  } */
+  }
 
   .card-members{
-    margin-top: 45%;
+    margin-top: 75%;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
@@ -142,7 +143,7 @@ h1{
   }
 
   .card-memberstwo{
-    margin-top: 75%;
+    margin-top: 107%;
     margin-bottom: 300px;
     display: flex;
     justify-content: center;
@@ -236,13 +237,16 @@ h1{
 
   /* MEDIA QUERIES */
 
-  @media screen and (min-width: 40em) and (orientation:portrait){
+  @media  screen and (max-width: 767px){
 
     body{
       margin:0;
       padding: 0;
       height: 100%;
       width: 100%;
+    }
+    .subtitle {
+      margin-top: 20%;
     }
     .heading-container {
       margin-left: 0;
@@ -257,19 +261,37 @@ h1{
       padding: 0;
     }
     .about{
-      margin-top: 100%;
+      margin-top: 50%;
       margin-bottom: 50%;
-      font-size: 2.5vw;
+      font-size: 1.9vw;
+    }
+    .card-solo{
+      margin-top: 50%;
+      margin-bottom: 50%;
+      font-size: 1.9vw;
     }
     .card-members {
-      margin-top: 100%;
+      margin-top: 80%;
+      height: 100%;
+      width: 100%;
+    
     }
     .card-memberstwo {
       margin-top: 100%;
-    }
-    .card {
       height: 100%;
       width: 100%;
+      
+    }
+    .card {
+      height: 80vw;
+      width: 60vw;
+      align-items: center;
+    }
+    .card img {
+      padding: 4%;
+      height: 30vw;
+      width: 30vw;
+      margin-right: 70%;
     }
     
   }
