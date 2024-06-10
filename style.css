@@ -266,25 +266,28 @@ h1{
       font-size: 1.9vw;
     }
     .card-solo{
-      margin-top: 50%;
+      margin-top: 105%;
       margin-bottom: 50%;
       font-size: 1.9vw;
     }
     .card-members {
-      margin-top: 80%;
+      margin-top:210%;
       height: 100%;
       width: 100%;
+      margin-left: 25%;
     
     }
     .card-memberstwo {
-      margin-top: 100%;
+      margin-top: 120%;
       height: 100%;
       width: 100%;
+      margin-left: 25%;
       
     }
     .card {
       height: 80vw;
       width: 60vw;
+      padding: 7%;
       align-items: center;
     }
     .card img {
